@@ -14,6 +14,7 @@ body {
 #connect-div {
     height: 80vh;
 }
+
 #about-div {
     margin: 10px;
 }
@@ -134,4 +135,8 @@ footer {
 .name-logo {
     float: right;
     margin: 0;
+}
+
+.modal-body {
+    text-align: left;
 }

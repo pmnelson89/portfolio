@@ -68,8 +68,9 @@
             </div>
         </div>
 
-        <!-- Project 1 -->
         <div class="container" id="project-cards">
+
+            <!-- Project 1 -->
             <div class="card proj-card" style="width: 18rem;">
                 <img src="assets/images/soundcheck.png" alt="Soundcheck App" class="float-right proj-img">
                 <div class="card-body">
@@ -83,64 +84,166 @@
                 </div>
             </div>
 
-        <!-- Project 1 Modal -->
-        <div class="modal" id="soundcheck-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title">Soundcheck</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p>lkjssifjsdoifjosidjfoisdjfoisj</p>
-                        <p>lskjdflkjsdofijsdoijfosdijfoisdjfoij</p>
+            <!-- Project 1 Modal -->
+            <div class="modal" id="soundcheck-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Soundcheck</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>My Roll</strong></h4>
+                            <p>On this project, I primarily focused on front-end functionality.  This consisted of researching the technology needed for the scroll animation and implementing it into our HTML skeleton.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The primary challenge in this app was finding a way to dynamically display the data returned from the APIs.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>I researched and implemented ScrollMagic and GSAP, along with css grid to display the photos and data in our html column with an asthetically pleasing scroll animation.</p>
+                            <h5><strong>Technologies</strong></h4>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>Bootstrap</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Bandsintown API</li>
+                                <li>Last.fm API</li>
+                                <li>Firebase</li>
+                                <li>bedio.js</li>
+                                <li>FontAwesome</li>
+                                <li>ScrollMagic</li>
+                                <li>GSAP</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="card proj-card" style="width: 18rem;">
-            <img src="assets/images/train-scheduler.png" alt="Train Scheduler App" class="float-right proj-img">
-            <div class="card-body">
-                <h5 class="card-title">Train Scheduler</h5>
-                <p class="card-text">This project uses firebase and moments.js to archive and display real-time train arrival data.</p>
-                <div class="button-group">
-                <a data-toggle="modal" href="#train-modal">Learn More</button>
-                <br>
-                <a href="https://pmnelson89.github.io/train-scheduler/" target="_blank">View Live Version</a>
-                <br>
-                <a href="https://github.com/pmnelson89/train-scheduler" target="_blank">View Code</a>
+            <!-- Project 2 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/train-scheduler.png" alt="Train Scheduler App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">Train Scheduler</h5>
+                    <p class="card-text">This project uses firebase and moments.js to archive and display real-time train arrival data.</p>
+                    <div class="button-group">
+                    <a data-toggle="modal" href="#train-modal">Learn More</button>
+                    <br>
+                    <a href="https://pmnelson89.github.io/train-scheduler/" target="_blank">View Live Version</a>
+                    <br>
+                    <a href="https://github.com/pmnelson89/train-scheduler" target="_blank">View Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <!-- Project 3 -->
-        <div class="card proj-card" style="width: 18rem;">
-            <img src="assets/images/get-outside.png" alt="Get Outside App" class="float-right proj-img">
-            <div class="card-body">
-                <h5 class="card-title">Get Outside</h5>
-                <p class="card-text">This project uses the Giphy API to dynamically create and display interactive elements on the screen.</p>
-                <a data-toggle="modal" href="#outside-modal">Learn More</a>
-                <br>
-                <a href="https://pmnelson89.github.io/get-outside/" target="_blank">View Live Version</a>
-                <br>
-                <a href="https://github.com/pmnelson89/get-outside" target="_blank">View Code</a>
-            </div>
-        </div>
 
-        <!-- Project 4 -->
-        <div class="card proj-card" style="width: 18rem;">
-            <img src="assets/images/trivia-game.png" alt="Trivia App" class="float-right proj-img">
-            <div class="card-body">
-                <h5 class="card-title">National Parks Trivia</h5>
-                <p class="card-text">This project displays timed trivia questions and tracks the user's score.</p>
-                <a data-toggle="modal" href="#trivia-modal">Learn More</a>
-                <br>
-                <a href="https://pmnelson89.github.io/TriviaGame/" target="_blank">View Live Version</a>
-                <br>
-                <a href="https://github.com/pmnelson89/TriviaGame" target="_blank">View Code</a>
+            <!-- Project 2 Modal -->
+            <div class="modal" id="train-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Train Scheduler</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>My Roll</strong></h4>
+                            <p>I built this project alone.  The goal was to take input from the form, archive it to the database, and display the real-time info in the schedule table.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The primary challenges in this project were archiving the input, and generating the next arrival as well as the minutes until the arrival.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>I used Firebase to archive the data from the input form.  In order to calculate the next arrival time and the minutes until the arrival, I created variable to perform the math using moments.js.</p>
+                            <h5><strong>Technologies</strong></h4>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>Bootstrap</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Firebase</li>
+                                <li>Moments.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        
+            <!-- Project 3 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/get-outside.png" alt="Get Outside App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">Get Outside</h5>
+                    <p class="card-text">This project uses the Giphy API to dynamically create and display interactive elements on the screen.</p>
+                    <a data-toggle="modal" href="#outside-modal">Learn More</a>
+                    <br>
+                    <a href="https://pmnelson89.github.io/get-outside/" target="_blank">View Live Version</a>
+                    <br>
+                    <a href="https://github.com/pmnelson89/get-outside" target="_blank">View Code</a>
+                </div>
+            </div>
+            
+            <!-- Project 3 Modal -->
+            <div class="modal" id="outside-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Get Outside</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>My Roll</strong></h4>
+                            <p>I built this project alone.  The goal was to take input from the form and use it to dynamically create buttons that are able to call on the Giphy API to generate gifs for that topic.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The challenge in this project was dynamically creating elements on the page that could later be used to dynamically create other elements.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>I used jQuery to take the input from the form and save it as a value on the button generated when the form is submitted.  The value was then used to search the API and display the .gifs returned.  I also added functionality to play and pause the .gifs, as well as the option to display another 10 images.</p>
+                            <h5><strong>Technologies</strong></h4>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>Bootstrap</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Giphy API</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/trivia-game.png" alt="Trivia App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">National Parks Trivia</h5>
+                    <p class="card-text">This project displays timed trivia questions and tracks the user's score.</p>
+                    <a data-toggle="modal" href="#trivia-modal">Learn More</a>
+                    <br>
+                    <a href="https://pmnelson89.github.io/TriviaGame/" target="_blank">View Live Version</a>
+                    <br>
+                    <a href="https://github.com/pmnelson89/TriviaGame" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 3 Modal -->
+            <div class="modal" id="trivia-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">National Parks</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>My Roll</strong></h4>
+                            <p>I built this project alone.  The goal for this project was to create a trivia game using jQuery to manipulate the HTML.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The challenge in this project was implementing timers that allow the user to only see one question at a time, and to answer within a set time limit to avoid being penalized.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>Using jQuery and Javascript logic, I created functions to display the questions from the object array.  Once displayed, these questions initiated a run timer function to only be displayed for a set amount of time.  If the time elasped, the question would be marked as incorrect and the next question would be displayed with a reset timer.</p>
+                            <h5><strong>Technologies</strong></h4>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>  
     </div>
     <hr>
