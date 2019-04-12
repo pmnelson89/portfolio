@@ -33,6 +33,7 @@ body {
 .proj-card {
     margin: 5px;
     background: rgba(211, 211, 211, 0.788);
+    display: flex;
 }
 
 #connect-div, footer {
@@ -136,4 +137,12 @@ footer {
 
 .modal-body {
     text-align: left;
+}
+
+.card-links {
+    vertical-align: bottom;
+}
+
+.card-title {
+    font-weight: bold;
 }
