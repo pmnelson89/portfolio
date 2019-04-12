@@ -2,7 +2,11 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+    #logo, #nav-buttons {
+        float: center;
+    }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
@@ -50,8 +54,8 @@ body {
 
 #logo {
     float: left;
-    width: 250px;
-    height: 90px;
+    /* width: 250px;
+    height: 90px; */
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
     font-weight: 700;
