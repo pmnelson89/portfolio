@@ -46,7 +46,7 @@ body {
     margin: 5px;
 }
 
-#portfolio-div, #connect-div, footer {
+#connect-div, footer {
     text-align: center;
 }
 
@@ -105,18 +105,64 @@ footer {
 
 #about-div, #portfolio-div, #connect-div {
     width: auto;
+    text-align: center;
 }
 
 .anchor {
     display: block;
-    height: 80px;
-    margin-top: -80px;
+    height: 56px;
+    margin-top: -56px;
     visibility: hidden; 
 }
 
-@media screen and (max-width: 576px) {
-    #logo {
-        width: 100%;
-        justify-content: center;
-    }
+.card-title {
+    
+}
+
+.card-text {
+    text-align: left;
+}
+
+#info p {
+    text-align: left;
+}
+
+.button-group {
+    float: bottom;
+}
+
+#cover-img {
+    width: 100%;
+}
+
+.jumbotron {
+    min-height: 750px;
+    background: url("../images/bg2.jpeg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.home-img {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron h1, .jumbotron p {
+text-align: center;
+font-weight: bolder;
+color: silver;
+text-shadow: -1px 1px 0 black;
+
 }

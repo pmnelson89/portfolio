@@ -4,31 +4,60 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="reset" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top" id="masthead">
-        <a class="navbar-brand" href="#about" id="logo">Paul Nelson</a>
-        <span class="nav-buttons" id="buttons">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#connect">Connect</a>
-        </span>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+        <a class="navbar-brand" href="#">Paul Nelson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#connect">Connect</a>
+                </li>
+            </ul>
+        </div>
+        </div>
     </nav>
+
+    <div class="container-fluid home-img">
+        <img src="assets/images/bg2.jpeg" alt="computer" style="width:100%;">
+        <div class="centered">
+            <h1>Paul Nelson</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </div>
+    <!-- About Me -->
     <span class="anchor" id="about"></span>
     <div class="container-fluid" id="about-div">
         <h3 class="mt-0">About Me</h3>
         <div class="container-fluid" id="info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum, labore, itaque sint soluta distinctio facilis natus ab ullam consequuntur id enim illo optio officia fuga rerum dolor, tempore repellendus?</p>
+            <p>I am a web developer currently enrolled in the UNC Chapel Hill Coding Boot Camp.  I am a 2012 graduate of Clemson University and have since enjoyed a successful career in sales and account management.  In late 2018, I decided to pursue a career in web development in order to work in collaborative environment that will allow me to use my creativity and problem solving skills.</p>
             <img src="assets/images/profile.png" alt="Profile-pic" class="rounded-circle" id="about-img">
         </div>
-        <a href="assets/resume.pdf" target="_blank"><img src="assets/images/pdf.png" id="resume"></a>
+        <a href="assets/resume.pdf" target="_blank">View Resume</a>
     </div>
     <hr>
+
+    <!-- Portfolio -->
     <span class="anchor" id="portfolio"></span>
     <div class="container" id="portfolio-div">
         <div class="row align-items-center">
@@ -36,45 +65,61 @@
                 <h3>Portfolio</h3>
             </div>
         </div>
+
+        <!-- Project 1 -->
         <div class="container" id="project-cards">
             <div class="card proj-card" style="width: 18rem;">
                 <img src="assets/images/soundcheck.png" alt="Soundcheck App" class="float-right proj-img">
                 <div class="card-body">
                     <h5 class="card-title">Soundcheck</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">This group project uses multiple APIs to display information about artists similar to one searched.  It also uses firebase to archive favorites.</p>
+                    <a data-toggle="modal" href="#soundcheck-modal">Learn More</button>
+                    <br>
                     <a href="https://jl3w.github.io/soundcheck/" target="_blank">View Live Version</a>
                     <br>
                     <a href="https://github.com/JL3w/soundcheck" target="_blank">View Code</a>
                 </div>
             </div>
 
+
+            <!-- Project 2 -->
             <div class="card proj-card" style="width: 18rem;">
                 <img src="assets/images/train-scheduler.png" alt="Train Scheduler App" class="float-right proj-img">
                 <div class="card-body">
                     <h5 class="card-title">Train Scheduler</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">This project uses firebase and moments.js to archive and display real-time train arrival data.</p>
+                    <div class="button-group">
+                    <a data-toggle="modal" href="#train-modal">Learn More</button>
+                    <br>
                     <a href="https://pmnelson89.github.io/train-scheduler/" target="_blank">View Live Version</a>
                     <br>
                     <a href="https://github.com/pmnelson89/train-scheduler" target="_blank">View Code</a>
+                    </div>
                 </div>
             </div>
         
+            <!-- Project 3 -->
             <div class="card proj-card" style="width: 18rem;">
                 <img src="assets/images/get-outside.png" alt="Get Outside App" class="float-right proj-img">
                 <div class="card-body">
                     <h5 class="card-title">Get Outside</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">This project uses the Giphy API to dynamically create and display interactive elements on the screen.</p>
+                    <a data-toggle="modal" href="#outside-modal">Learn More</a>
+                    <br>
                     <a href="https://pmnelson89.github.io/get-outside/" target="_blank">View Live Version</a>
                     <br>
                     <a href="https://github.com/pmnelson89/get-outside" target="_blank">View Code</a>
                 </div>
             </div>
 
+            <!-- Project 4 -->
             <div class="card proj-card" style="width: 18rem;">
                 <img src="assets/images/trivia-game.png" alt="Trivia App" class="float-right proj-img">
                 <div class="card-body">
                     <h5 class="card-title">National Parks Trivia</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">This project displays timed trivia questions and tracks the user's score.</p>
+                    <a data-toggle="modal" href="#trivia-modal">Learn More</a>
+                    <br>
                     <a href="https://pmnelson89.github.io/TriviaGame/" target="_blank">View Live Version</a>
                     <br>
                     <a href="https://github.com/pmnelson89/TriviaGame" target="_blank">View Code</a>
@@ -83,6 +128,8 @@
         </div>  
     </div>
     <hr>
+
+    <!-- Connect -->
     <span class="anchor" id="connect"></span>
     <div class="container" id="connect-div">
         <div class="row align-items-center">
@@ -100,13 +147,16 @@
         <a href="https://github.com/pmnelson89" target="_blank"><img src="assets/images/GitHub-Mark-Light-120px-plus.png" id="github"></a>
         <a href="https://www.linkedin.com/in/paulmnelson1/" target="_blank"><img src="assets/images/linkedin.png" id="linkedin"></a>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-dark">
         <div class="container">
-            Copyright &copy;
+            Paul Nelson 2019
         </div>
     </footer>
 
-    <script src="assets/javascript.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 </body>
 </html>
