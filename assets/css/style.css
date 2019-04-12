@@ -32,6 +32,7 @@ body {
 
 .proj-card {
     margin: 5px;
+    background: rgba(211, 211, 211, 0.788);
 }
 
 #connect-div, footer {
@@ -79,10 +80,6 @@ footer {
 
 #info p {
     text-align: left;
-}
-
-.button-group {
-    float: bottom;
 }
 
 #cover-img {
