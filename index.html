@@ -4,41 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <link rel="reset" type="text/css" href="assets/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="reset" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="assets/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top" id="masthead">
-        <a class="navbar-brand" href="#" id="logo">Paul Nelson</a>
-        <span class="nav-buttons">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Connect</a>
+        <a class="navbar-brand" href="#about" id="logo">Paul Nelson</a>
+        <span class="nav-buttons" id="buttons">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#connect">Connect</a>
         </span>
     </nav>
-    <!-- <div class="navbar navbar-light bg-dark sticky-top" id="masthead">
-        <span class="navbar-brand">
-            <a href="index.html" id="logo">Paul Nelson</a>
-        </span>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Connect</a>
-        </nav>
-    </div> -->
-    <div class="container-fluid" id="about">
+    <span class="anchor" id="about"></span>
+    <div class="container-fluid" id="about-div">
         <h3 class="mt-0">About Me</h3>
         <div class="container-fluid" id="info">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum, labore, itaque sint soluta distinctio facilis natus ab ullam consequuntur id enim illo optio officia fuga rerum dolor, tempore repellendus?</p>
             <img src="assets/images/profile.png" alt="Profile-pic" class="rounded-circle" id="about-img">
         </div>
-        <img src="assets/images/GitHub-Mark-Light-120px-plus.png" id="github">
-        <img src="assets/images/linkedin.png" id="linkedin">
+        <a href="assets/resume.pdf" target="_blank"><img src="assets/images/pdf.png" id="resume"></a>
     </div>
     <hr>
-    <div class="container" id="portfolio">
+    <span class="anchor" id="portfolio"></span>
+    <div class="container" id="portfolio-div">
         <div class="row align-items-center">
             <div class="col-md-12" id="portfolio-head">
                 <h3>Portfolio</h3>
@@ -46,52 +38,53 @@
         </div>
         <div class="container" id="project-cards">
             <div class="card proj-card" style="width: 18rem;">
-                <img src="http://placehold.it/150x150" alt="Placeholder" class="float-right">
+                <img src="assets/images/soundcheck.png" alt="Soundcheck App" class="float-right proj-img">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Soundcheck</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://jl3w.github.io/soundcheck/" target="_blank">View Live Version</a>
                     <br>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://github.com/JL3w/soundcheck" target="_blank">View Code</a>
                 </div>
             </div>
 
             <div class="card proj-card" style="width: 18rem;">
-                <img src="http://placehold.it/150x150" alt="Placeholder" class="float-right">
+                <img src="assets/images/train-scheduler.png" alt="Train Scheduler App" class="float-right proj-img">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Train Scheduler</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://pmnelson89.github.io/train-scheduler/" target="_blank">View Live Version</a>
                     <br>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://github.com/pmnelson89/train-scheduler" target="_blank">View Code</a>
                 </div>
             </div>
         
             <div class="card proj-card" style="width: 18rem;">
-                <img src="http://placehold.it/150x150" alt="Placeholder" class="float-right">
+                <img src="assets/images/get-outside.png" alt="Get Outside App" class="float-right proj-img">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Get Outside</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://pmnelson89.github.io/get-outside/" target="_blank">View Live Version</a>
                     <br>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://github.com/pmnelson89/get-outside" target="_blank">View Code</a>
                 </div>
             </div>
 
             <div class="card proj-card" style="width: 18rem;">
-                <img src="http://placehold.it/150x150" alt="Placeholder" class="float-right">
+                <img src="assets/images/trivia-game.png" alt="Trivia App" class="float-right proj-img">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">National Parks Trivia</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://pmnelson89.github.io/TriviaGame/" target="_blank">View Live Version</a>
                     <br>
-                    <a href="#">Go somewhere</a>
+                    <a href="https://github.com/pmnelson89/TriviaGame" target="_blank">View Code</a>
                 </div>
             </div>
         </div>  
     </div>
     <hr>
-    <div class="container" id="connect">
+    <span class="anchor" id="connect"></span>
+    <div class="container" id="connect-div">
         <div class="row align-items-center">
             <div class="col-md-12" id="contact-header">
                 <h3>Connect</h3>
@@ -104,12 +97,16 @@
                 <h6>(864)812-0123</h6>
             </div>
         </div>
+        <a href="https://github.com/pmnelson89" target="_blank"><img src="assets/images/GitHub-Mark-Light-120px-plus.png" id="github"></a>
+        <a href="https://www.linkedin.com/in/paulmnelson1/" target="_blank"><img src="assets/images/linkedin.png" id="linkedin"></a>
     </div>
     <footer class="bg-dark">
         <div class="container">
             Copyright &copy;
         </div>
     </footer>
+
+    <script src="assets/javascript.js"></script>
     
 </body>
 </html>

@@ -1,12 +1,7 @@
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    #logo, #nav-buttons {
-        float: center;
-    }
-}
+
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
@@ -22,18 +17,21 @@ body {
     width: auto;
 }
 
-#project-cards, #about, #info {
+#project-cards, #about-div, #info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 
-#about {
+#connect-div {
+    height: 80vh;
+}
+#about-div {
     margin: 10px;
 }
 
-#github, #linkedin {
+#github, #linkedin, #resume {
     height: 50px;
     margin: 20px;
 }
@@ -48,7 +46,7 @@ body {
     margin: 5px;
 }
 
-#portfolio, #connect, footer {
+#portfolio-div, #connect-div, footer {
     text-align: center;
 }
 
@@ -87,7 +85,7 @@ footer {
 }
 
 #masthead {
-    max-height: 80px;
+    height: 80px;
     vertical-align: middle;
     padding-top: 0;
     width: auto;
@@ -97,10 +95,28 @@ footer {
     padding-top: 5px;
 }
 
+.proj-img {
+    max-width: 300px;
+    height: 200px;
+}
 #nav-buttons {
     float: right;
 }
 
-#about, #portfolio, #connect {
+#about-div, #portfolio-div, #connect-div {
     width: auto;
+}
+
+.anchor {
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden; 
+}
+
+@media screen and (max-width: 576px) {
+    #logo {
+        width: 100%;
+        justify-content: center;
+    }
 }
