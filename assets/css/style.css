@@ -146,3 +146,7 @@ footer {
 .card-title {
     font-weight: bold;
 }
+
+.centered {
+    padding: 20px;
+}
