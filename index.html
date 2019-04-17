@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#connect">Connect</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
+                </li>
             </ul>
         </div>
         </div>
@@ -55,7 +58,6 @@
             <p>I am a web developer currently enrolled in the UNC Chapel Hill Coding Boot Camp.  I am a 2012 graduate of Clemson University and have since enjoyed a successful career in sales and account management.  In late 2018, I decided to pursue a career in web development in order to work in collaborative environment that will allow me to use my creativity and problem solving skills.</p>
             <img src="assets/images/profile.png" alt="Profile-pic" class="rounded-circle" id="about-img">
         </div>
-        <a href="assets/resume.pdf" target="_blank">View Resume</a>
     </div>
     <hr>
 
@@ -262,7 +264,53 @@
                         </div>
                 </div>
             </div>
-        </div>  
+
+            <!-- Project 5 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/liri.png" alt="LIRI App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">LIRI Bot</h5>
+                    <p class="card-text">Language Interpretation and Recognition Interface.  This is a command line node app that take in parameters and gives back data.</p>
+                    <div class="card-links">
+                        <a data-toggle="modal" href="#liri-modal">Learn More</a>
+                        <br>
+                        <a href="https://github.com/pmnelson89/liri-node-app" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 Modal -->
+            <div class="modal" id="liri-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">LIRI Bot</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>My Roll</strong></h4>
+                            <p>I built this project alone.  The goal for this project was to create a command line app using node.js.  The app takes in various commands along with a search parameter and gives back data based on the command.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The challenge in this project was calling multiple APIs through the command line.  Another challenge was keeping the Spotify API key private.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>I broke the API calls into individual functions that would run based on the command entered.  In order for the app to function correctly, it was crucial that I installed the correct node packages and included the necessary requirements in the main javascript file.  To keep the Spotify API keys private, I included the keys in a .env file and used the dotenv package to call it.</p>
+                            <h5><strong>Technologies</strong></h4>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Node.js</li>
+                                <li>Node-Spotify-API</li>
+                                <li>Bands In Town API</li>
+                                <li>OMDB API</li>
+                                <li>Axios</li>
+                                <li>Moment.js</li>
+                                <li>DotEnv</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                </div>
+            </div>  
     </div>
     <hr>
 

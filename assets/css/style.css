@@ -140,7 +140,8 @@ footer {
 }
 
 .card-links {
-    vertical-align: bottom;
+    margin-bottom: 0;
+    vertical-align: text-bottom;
 }
 
 .card-title {
