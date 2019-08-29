@@ -123,6 +123,248 @@
 
             <!-- Project 2 -->
             <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/train-scheduler.png" alt="Train Scheduler App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">Train Scheduler</h5>
+                    <p class="card-text">This project uses firebase and moments.js to archive and display real-time train arrival data.</p>
+                    <div class="card-links">
+                        <a data-toggle="modal" href="#train-modal">Learn More</button>
+                        <br>
+                        <a href="https://pmnelson89.github.io/train-scheduler/" target="_blank">View Live Version</a>
+                        <br>
+                        <a href="https://github.com/pmnelson89/train-scheduler" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 Modal -->
+            <div class="modal" id="train-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Train Scheduler</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>Overview</strong></h5>
+                            <p>This app updates a schedule table with current train data. The data is saved to a firebase database.</p>
+                            <!-- <h5><strong>My Role</strong></h5>
+                            <p>I built this project alone.  The goal was to take input from the form, archive it to the database, and display the real-time info in the schedule table.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The primary challenges in this project were archiving the input, and generating the next arrival as well as the minutes until the arrival.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>I used Firebase to archive the data from the input form.  In order to calculate the next arrival time and the minutes until the arrival, I created variable to perform the math using moments.js.</p> -->
+                            <h5><strong>Technologies</strong></h5>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>Bootstrap</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Firebase</li>
+                                <li>Moments.js</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <!-- Project 3 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/trivia-game.png" alt="Trivia App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">National Parks Trivia</h5>
+                    <p class="card-text">This project displays timed trivia questions and tracks the user's score.</p>
+                    <div class="card-links">
+                        <a data-toggle="modal" href="#trivia-modal">Learn More</a>
+                        <br>
+                        <a href="https://pmnelson89.github.io/TriviaGame/" target="_blank">View Live Version</a>
+                        <br>
+                        <a href="https://github.com/pmnelson89/TriviaGame" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 Modal -->
+            <div class="modal" id="trivia-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">National Parks</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>Overview</strong></h5>
+                            <p>This game displays multiple choice questions that must be answered in a limited amount of time. After the questions are answered, a screen displays the result of the question and the score.</p>
+                            <!-- <h5><strong>My Role</strong></h5>
+                            <p>I built this project alone.  The goal for this project was to create a trivia game using jQuery to manipulate the HTML.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The challenge in this project was implementing timers that allow the user to only see one question at a time, and to answer within a set time limit to avoid being penalized.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>Using jQuery and Javascript logic, I created functions to display the questions from the object array.  Once displayed, these questions initiated a run timer function to only be displayed for a set amount of time.  If the time elasped, the question would be marked as incorrect and the next question would be displayed with a reset timer.</p> -->
+                            <h5><strong>Technologies</strong></h5>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/liri.png" alt="LIRI App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">LIRI Bot</h5>
+                    <p class="card-text">Language Interpretation and Recognition Interface.  This is a command line node app that take in parameters and gives back data.</p>
+                    <div class="card-links">
+                        <a data-toggle="modal" href="#liri-modal">Learn More</a>
+                        <br>
+                        <a href="https://github.com/pmnelson89/liri-node-app" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 Modal -->
+            <div class="modal" id="liri-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">LIRI Bot</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>Overview</strong></h5>
+                            <p>This application uses Node.js to create a bot that takes in arguments and returns data.</p>
+                            <!-- <h5><strong>My Role</strong></h5>
+                            <p>I built this project alone.  The goal for this project was to create a command line app using node.js.  The app takes in various commands along with a search parameter and gives back data based on the command.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>The challenge in this project was calling multiple APIs through the command line.  Another challenge was keeping the Spotify API key private.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>I broke the API calls into individual functions that would run based on the command entered.  In order for the app to function correctly, it was crucial that I installed the correct node packages and included the necessary requirements in the main javascript file.  To keep the Spotify API keys private, I included the keys in a .env file and used the dotenv package to call it.</p> -->
+                            <h5><strong>Technologies</strong></h5>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Node.js</li>
+                                <li>Node-Spotify-API</li>
+                                <li>Bands In Town API</li>
+                                <li>OMDB API</li>
+                                <li>Axios</li>
+                                <li>Moment.js</li>
+                                <li>DotEnv</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                </div>
+            </div>  
+
+            <!-- Project 5 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/view-products copy.png" alt="Bamazon App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">Node-SQL Storefront</h5>
+                    <p class="card-text">This application uses node.js and inquirer to perform storefront operations on the command line that connects with data stored in a mySQL database.</p>
+                    <div class="card-links">
+                        <a data-toggle="modal" href="#bamazon-modal">Learn More</a>
+                        <br>
+                        <a href="https://github.com/pmnelson89/node-sql-storefront" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 Modal -->
+            <div class="modal" id="bamazon-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Node-SQL Storefront</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>Overview</strong></h5>
+                            <p>This application uses node.js and inquirer to perform storefront operations on the command line that connects with data stored in a mySQL database.</p>
+                            <!-- <h5><strong>My Role</strong></h5>
+                            <p>Coming Soon.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>Coming Soon.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>Coming Soon.</p> -->
+                            <h5><strong>Technologies</strong></h5>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Node.js</li>
+                                <li>Inquirer.js</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                </div>
+            </div>  
+
+            <!-- Project 6 -->
+            <div class="card proj-card" style="width: 18rem;">
+                <img src="assets/images/friendfinder.png" alt="Friend Finder App" class="float-right proj-img">
+                <div class="card-body">
+                    <h5 class="card-title">Friend Finder</h5>
+                    <p class="card-text">This project uses an express server to take in survey data, perform calculations, and return the best friend match based on the user's input.</p>
+                    <div class="card-links">
+                        <a data-toggle="modal" href="#friendfinder-modal">Learn More</a>
+                        <br>
+                        <a href="https://thawing-peak-29255.herokuapp.com/" target="_blank">View Live Version</a>
+                        <br>
+                        <a href="https://github.com/pmnelson89/friend-finder" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 Modal -->
+            <div class="modal" id="friendfinder-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Friend Finder</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h5><strong>Overview</strong></h5>
+                            <p>This application uses Node.js and Express.js to find compatible friend matches based on the user survey responses.</p>
+                            <!-- <h5><strong>My Role</strong></h5>
+                            <p>Coming Soon.</p>
+                            <h5><strong>Challenges</strong></h5>
+                            <p>Coming Soon.</p>
+                            <h5><strong>Solutions</strong></h5>
+                            <p>Coming Soon.</p> -->
+                            <h5><strong>Technologies</strong></h5>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>Bootstrap</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Path</li>
+                                <li>Postman</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="card proj-card" style="width: 18rem;">
                     <img src="assets/images/soundcheck.png" alt="Soundcheck App" class="float-right proj-img">
                     <div class="card-body">
                         <h5 class="card-title">Soundcheck</h5>
@@ -135,9 +377,9 @@
                             <a href="https://github.com/JL3w/soundcheck" target="_blank">View Code</a>
                         </div>
                     </div>
-                </div>
+            </div>
 
-            <!-- Project 2 Modal -->
+            <!-- Project 7 Modal -->
             <div class="modal" id="soundcheck-modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -173,248 +415,6 @@
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="card proj-card" style="width: 18rem;">
-                <img src="assets/images/train-scheduler.png" alt="Train Scheduler App" class="float-right proj-img">
-                <div class="card-body">
-                    <h5 class="card-title">Train Scheduler</h5>
-                    <p class="card-text">This project uses firebase and moments.js to archive and display real-time train arrival data.</p>
-                    <div class="card-links">
-                        <a data-toggle="modal" href="#train-modal">Learn More</button>
-                        <br>
-                        <a href="https://pmnelson89.github.io/train-scheduler/" target="_blank">View Live Version</a>
-                        <br>
-                        <a href="https://github.com/pmnelson89/train-scheduler" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 Modal -->
-            <div class="modal" id="train-modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">Train Scheduler</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h5><strong>Overview</strong></h5>
-                            <p>This app updates a schedule table with current train data. The data is saved to a firebase database.</p>
-                            <!-- <h5><strong>My Role</strong></h5>
-                            <p>I built this project alone.  The goal was to take input from the form, archive it to the database, and display the real-time info in the schedule table.</p>
-                            <h5><strong>Challenges</strong></h5>
-                            <p>The primary challenges in this project were archiving the input, and generating the next arrival as well as the minutes until the arrival.</p>
-                            <h5><strong>Solutions</strong></h5>
-                            <p>I used Firebase to archive the data from the input form.  In order to calculate the next arrival time and the minutes until the arrival, I created variable to perform the math using moments.js.</p> -->
-                            <h5><strong>Technologies</strong></h5>
-                            <ul>
-                                <li>HTML 5</li>
-                                <li>Bootstrap</li>
-                                <li>CSS3</li>
-                                <li>Javascript</li>
-                                <li>jQuery</li>
-                                <li>Firebase</li>
-                                <li>Moments.js</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         
-            <!-- Project 4 -->
-            <div class="card proj-card" style="width: 18rem;">
-                <img src="assets/images/trivia-game.png" alt="Trivia App" class="float-right proj-img">
-                <div class="card-body">
-                    <h5 class="card-title">National Parks Trivia</h5>
-                    <p class="card-text">This project displays timed trivia questions and tracks the user's score.</p>
-                    <div class="card-links">
-                        <a data-toggle="modal" href="#trivia-modal">Learn More</a>
-                        <br>
-                        <a href="https://pmnelson89.github.io/TriviaGame/" target="_blank">View Live Version</a>
-                        <br>
-                        <a href="https://github.com/pmnelson89/TriviaGame" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 Modal -->
-            <div class="modal" id="trivia-modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">National Parks</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h5><strong>Overview</strong></h5>
-                            <p>This game displays multiple choice questions that must be answered in a limited amount of time. After the questions are answered, a screen displays the result of the question and the score.</p>
-                            <!-- <h5><strong>My Role</strong></h5>
-                            <p>I built this project alone.  The goal for this project was to create a trivia game using jQuery to manipulate the HTML.</p>
-                            <h5><strong>Challenges</strong></h5>
-                            <p>The challenge in this project was implementing timers that allow the user to only see one question at a time, and to answer within a set time limit to avoid being penalized.</p>
-                            <h5><strong>Solutions</strong></h5>
-                            <p>Using jQuery and Javascript logic, I created functions to display the questions from the object array.  Once displayed, these questions initiated a run timer function to only be displayed for a set amount of time.  If the time elasped, the question would be marked as incorrect and the next question would be displayed with a reset timer.</p> -->
-                            <h5><strong>Technologies</strong></h5>
-                            <ul>
-                                <li>HTML 5</li>
-                                <li>CSS3</li>
-                                <li>Javascript</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="card proj-card" style="width: 18rem;">
-                <img src="assets/images/liri.png" alt="LIRI App" class="float-right proj-img">
-                <div class="card-body">
-                    <h5 class="card-title">LIRI Bot</h5>
-                    <p class="card-text">Language Interpretation and Recognition Interface.  This is a command line node app that take in parameters and gives back data.</p>
-                    <div class="card-links">
-                        <a data-toggle="modal" href="#liri-modal">Learn More</a>
-                        <br>
-                        <a href="https://github.com/pmnelson89/liri-node-app" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 Modal -->
-            <div class="modal" id="liri-modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">LIRI Bot</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h5><strong>Overview</strong></h5>
-                            <p>This application uses Node.js to create a bot that takes in arguments and returns data.</p>
-                            <!-- <h5><strong>My Role</strong></h5>
-                            <p>I built this project alone.  The goal for this project was to create a command line app using node.js.  The app takes in various commands along with a search parameter and gives back data based on the command.</p>
-                            <h5><strong>Challenges</strong></h5>
-                            <p>The challenge in this project was calling multiple APIs through the command line.  Another challenge was keeping the Spotify API key private.</p>
-                            <h5><strong>Solutions</strong></h5>
-                            <p>I broke the API calls into individual functions that would run based on the command entered.  In order for the app to function correctly, it was crucial that I installed the correct node packages and included the necessary requirements in the main javascript file.  To keep the Spotify API keys private, I included the keys in a .env file and used the dotenv package to call it.</p> -->
-                            <h5><strong>Technologies</strong></h5>
-                            <ul>
-                                <li>Javascript</li>
-                                <li>Node.js</li>
-                                <li>Node-Spotify-API</li>
-                                <li>Bands In Town API</li>
-                                <li>OMDB API</li>
-                                <li>Axios</li>
-                                <li>Moment.js</li>
-                                <li>DotEnv</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                </div>
-            </div>  
-
-            <!-- Project 6 -->
-            <div class="card proj-card" style="width: 18rem;">
-                <img src="assets/images/view-products copy.png" alt="Bamazon App" class="float-right proj-img">
-                <div class="card-body">
-                    <h5 class="card-title">Node-SQL Storefront</h5>
-                    <p class="card-text">This application uses node.js and inquirer to perform storefront operations on the command line that connects with data stored in a mySQL database.</p>
-                    <div class="card-links">
-                        <a data-toggle="modal" href="#bamazon-modal">Learn More</a>
-                        <br>
-                        <a href="https://github.com/pmnelson89/node-sql-storefront" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 Modal -->
-            <div class="modal" id="bamazon-modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">Node-SQL Storefront</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h5><strong>Overview</strong></h5>
-                            <p>This application uses node.js and inquirer to perform storefront operations on the command line that connects with data stored in a mySQL database.</p>
-                            <!-- <h5><strong>My Role</strong></h5>
-                            <p>Coming Soon.</p>
-                            <h5><strong>Challenges</strong></h5>
-                            <p>Coming Soon.</p>
-                            <h5><strong>Solutions</strong></h5>
-                            <p>Coming Soon.</p> -->
-                            <h5><strong>Technologies</strong></h5>
-                            <ul>
-                                <li>Javascript</li>
-                                <li>Node.js</li>
-                                <li>Inquirer.js</li>
-                                <li>MySQL</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                </div>
-            </div>  
-
-            <!-- Project 7 -->
-            <div class="card proj-card" style="width: 18rem;">
-                <img src="assets/images/friendfinder.png" alt="Friend Finder App" class="float-right proj-img">
-                <div class="card-body">
-                    <h5 class="card-title">Friend Finder</h5>
-                    <p class="card-text">This project uses an express server to take in survey data, perform calculations, and return the best friend match based on the user's input.</p>
-                    <div class="card-links">
-                        <a data-toggle="modal" href="#friendfinder-modal">Learn More</a>
-                        <br>
-                        <a href="https://thawing-peak-29255.herokuapp.com/" target="_blank">View Live Version</a>
-                        <br>
-                        <a href="https://github.com/pmnelson89/friend-finder" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 7 Modal -->
-            <div class="modal" id="friendfinder-modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">Friend Finder</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h5><strong>Overview</strong></h5>
-                            <p>This application uses Node.js and Express.js to find compatible friend matches based on the user survey responses.</p>
-                            <!-- <h5><strong>My Role</strong></h5>
-                            <p>Coming Soon.</p>
-                            <h5><strong>Challenges</strong></h5>
-                            <p>Coming Soon.</p>
-                            <h5><strong>Solutions</strong></h5>
-                            <p>Coming Soon.</p> -->
-                            <h5><strong>Technologies</strong></h5>
-                            <ul>
-                                <li>HTML 5</li>
-                                <li>Bootstrap</li>
-                                <li>Javascript</li>
-                                <li>jQuery</li>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>Path</li>
-                                <li>Postman</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
                 </div>
             </div>
             
